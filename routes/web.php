@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Auth::routes();
+
+Route::get('/', [HomeController::class,"home"]);
+Route::get('/autocomplete', [HomeController::class,"autocomplete"]);
+Route::get('/task_1', [HomeController::class,"product"]);
+Route::get('/task_2', [HomeController::class,"index"]);
+
