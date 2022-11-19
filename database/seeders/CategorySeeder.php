@@ -19,6 +19,6 @@ class CategorySeeder extends Seeder
               'name' => $faker->name,
               'description' => $faker->sentence(),
             ]);
-         }
+        }
     }
 }

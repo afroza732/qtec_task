@@ -2,7 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Category;
 use App\Models\Product;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
 class ProductSeeder extends Seeder

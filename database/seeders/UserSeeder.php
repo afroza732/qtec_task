@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
@@ -15,8 +17,9 @@ class UserSeeder extends Seeder
         for ($i = 0; $i < 10; $i++) {
             User::create([
               'name' => $faker->name,
-              'name' => $faker->email,
+              'email' => $faker->email,
+              'password' => "password",
             ]);
-         }
+        }
     }
 }
